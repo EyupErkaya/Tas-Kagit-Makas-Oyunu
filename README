@@ -1,0 +1,53 @@
+Proje: Taş, Kağıt, Makas Oyunu
+1. Projenin Amacı
+Bu proje, klasik "Taş, Kağıt, Makas" oyununu Python kullanarak bilgisayara karşı oynanabilir hale getirmeyi amaçlamaktadır. Oyuncu, bilgisayara karşı stratejik hamleler yaparak puan kazanmaya çalışır. Oyun, kullanıcı dostu bir komut satırı arayüzüyle oynanır ve oyuncuya dinamik bir oyun deneyimi sunar.
+
+2. Teknik Detaylar
+2.1. Programlama Dili ve Geliştirme Ortamı
+
+Python: Proje, esnekliği ve geniş kütüphane desteği sayesinde hızlı geliştirme imkanı sunan Python diliyle yazılmıştır.
+Geliştirme Ortamı: Proje, PyCharm, Visual Studio Code gibi Python destekleyen herhangi bir IDE veya basit bir metin editörüyle geliştirilebilir.
+2.2. Oyunun Kuralları
+
+Oyuncu taş, kağıt veya makas hamlelerinden birini seçer.
+Bilgisayar, rastgele bir hamle seçer ve iki hamle karşılaştırılır.
+Sonuçlar:
+Taş makası yener.
+Kağıt taşı yener.
+Makas kağıdı yener.
+Aynı hamle yapılırsa oyun berabere biter.
+Oyuncu her kaybettiğinde bir can kaybeder.
+Oyuncu her kazandığında 10 puan kazanır.
+Oyuncu 50 puana ulaştığında bir ekstra can kazanır.
+Oyuncunun canı tükendiğinde oyun sona erer ve oyuncunun performansı özetlenir.
+2.3. Ana Bileşenler
+
+Rastgele Hamle Üretimi: Bilgisayarın hamlesi, random.randint fonksiyonu ile rastgele seçilir.
+Kullanıcı Girdisi ve Kontrol Mekanizması: Kullanıcıdan hamle almak için input() fonksiyonu kullanılır. Girilen hamlenin geçerliliği if-else blokları ile kontrol edilir.
+Oyun Döngüsü: while döngüsü, oyuncunun canı bitene kadar oyun akışını sürdürür.
+Puanlama ve Can Sistemi: Kazanma ve kaybetme durumlarına göre oyuncunun puanı ve can durumu güncellenir.
+Oyun Sonu ve İstatistikler: Oyun bittiğinde oyuncunun kazandığı puanlar ve oyun istatistikleri ekranda gösterilir.
+2.4. Fonksiyonlar
+
+oyun(): Oyun döngüsünü ve oyun mantığını içeren ana fonksiyondur. Bu fonksiyon, kullanıcının hamlelerini bilgisayarın hamleleri ile karşılaştırır, puanlama ve can sistemini yönetir.
+while True: Bu yapı, kullanıcıdan oyuna başlamak isteyip istemediğini sorar ve yanıtına göre oyunu başlatır veya sonlandırır.
+2.5. Kullanıcı Etkileşimi
+
+Kullanıcı Girdisi: Kullanıcı, hamlesini input() fonksiyonu ile girer. Oyuncu istediği zaman q tuşuna basarak oyundan çıkabilir.
+Çıkış ve Başlangıç Seçenekleri: Oyun başında ve her oyun sonunda kullanıcıya oyuna devam etmek isteyip istemediği sorulur.
+2.6. Ekstra Özellikler
+
+Can Kazanma: Oyuncu, 50 puana ulaştığında ekstra bir can kazanır, bu da oyuna devam etme süresini uzatır.
+Çıkış Opsiyonu: Kullanıcı, q tuşuna basarak oyundan çıkma seçeneğine sahiptir. Bu özellik, kullanıcıya esneklik sağlar.
+3. Geliştirme Adımları
+Temel Oyun Mekaniğinin Kurulması: İlk olarak, taş, kağıt, makas oyununun temel mekaniği ve kuralları Python'da kodlandı.
+Girdi Doğrulama ve Hata Kontrolü: Kullanıcı girdisinin geçerliliği ve olası hatalı girişlerin kontrolü sağlandı.
+Oyun Döngüsü ve Can Sistemi: Oyunun sürekli devam etmesini sağlayan döngü ve puan/can sistemi geliştirildi.
+Oyun Sonu İstatistikleri: Oyun bittiğinde oyuncuya performans özeti sunan bir yapı eklendi.
+Ekstra Özellikler: Oyuna can kazanma, çıkış opsiyonu gibi ekstra özellikler eklendi.
+4. Geliştirme ve İyileştirme Alanları
+Grafik Kullanıcı Arayüzü (GUI): Oyun, komut satırı yerine Tkinter veya PyQt gibi araçlar kullanılarak grafik arayüzle geliştirilebilir.
+Yapay Zeka (AI) Stratejileri: Bilgisayarın hamlelerini daha stratejik hale getirmek için basit yapay zeka algoritmaları eklenebilir.
+Çoklu Oyuncu Modu: Oyun, aynı anda iki kişinin karşılıklı oynayabileceği bir yapıya dönüştürülebilir.
+Farklı Oyun Modları: Zamana karşı yarışma, sınırsız can ile oyun gibi alternatif oyun modları eklenebilir.
+Detaylı İstatistikler: Oyuncunun oyun sırasında yaptığı hamlelerin ve sonuçlarının daha detaylı bir istatistik analizi sunulabilir.

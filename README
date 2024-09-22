@@ -1,3 +1,5 @@
+###Güncelleme##
+
 Proje: Taş, Kağıt, Makas Oyunu
 1. Projenin Amacı
 Bu proje, klasik "Taş, Kağıt, Makas" oyununu Python kullanarak bilgisayara karşı oynanabilir hale getirmeyi amaçlamaktadır. Oyuncu, bilgisayara karşı stratejik hamleler yaparak puan kazanmaya çalışır. Oyun, kullanıcı dostu bir komut satırı arayüzüyle oynanır ve oyuncuya dinamik bir oyun deneyimi sunar.
